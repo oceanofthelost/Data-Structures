@@ -3,24 +3,26 @@
 
 	class Node
 	{
-			private:
-				unsigned data;
-				Node* next;
-			public:
-				Node();
-				void SetData(unsigned);
-				void GetNext(Node* passedNexed)
-				int GetData();
-				Node* GetNext();
+		private:
+			unsigned data;
+			Node* next;
+		public:
+			Node();
+			void SetData(unsigned);
+			void GetNext(Node* passedNexed)
+			int GetData();
+			Node* GetNext();
 
 	};
 
 	class SingleLinkedList
 	{
-			public:
-				SingleLinkedList();
-				insert(unsigned);
-				delete(unsigned);
+		private:
+			Node* head;
+		public:
+			SingleLinkedList();
+			void Print();
+			void Append(unsigned);
+			void Delete(unsigned);
 	};
-
 #endif
