@@ -22,7 +22,8 @@
 		public:
 			SingleLinkedList();
 			void Print();
-			void Append(unsigned);
+			void AppendBeginning(unsigned);
+			void AppendEnd(unsigned);
 			void Delete(unsigned);
 	};
 #endif
